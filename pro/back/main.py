@@ -34,9 +34,9 @@ async def get_css():
 async def get_js():
     return FileResponse("../front/js/script.js")
 
-@app.get("/img/6094668.jpg")
+@app.get("/img/favicon.ico")
 async def get_favicon():
-    return FileResponse("../front/img/6094668.jpg")
+    return FileResponse("../front/img/favicon.ico")
 
 if __name__ == "__main__":
     uvicorn.run(app, host="127.0.0.1", port=8000)
